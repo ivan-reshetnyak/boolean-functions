@@ -8,10 +8,10 @@ using namespace discr_math;
 using std::cout;
 using std::endl;
 
-static const int NumOfArgs = 10;
+static const int NumOfArgs = 4;
 
 int main( int argc, char **argv ) {
-  freopen("10.txt", "w", stdout);
+  //freopen("8.txt", "w", stdout);
 
   binary Signature = (binary(16) + binary(192)).pow(1 << (NumOfArgs - 3));
   Signature.resize(1 << NumOfArgs);
@@ -39,7 +39,7 @@ int main( int argc, char **argv ) {
   if (Func.isSymmetric())
     cout << "Symmetric" << endl;
 
-  //_getch();
+  _getch();
 
   return 0;
 }

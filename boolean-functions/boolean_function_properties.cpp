@@ -8,8 +8,12 @@ bool boolean_function::isSelfDual( void ) {
   truth_table Table(Signature);
   signature NewSign = Signature;
 
-  for (int i = 0, Size = 1 << Signature.getNumArgs(); i < Size; i++)
-    NewSign[i] = !Table(intToBoolVec(~i));
+  for (int i = 0, Size = 1 << Signature.getNumArgs(); i < Size; i++) {
+    std::vector<bool> Args = intToBoolVec(i);
+    for (auto it = Args.begin(); it < Args.end(); ++it)
+      *it = !*it;
+    NewSign[i] = !Table(Args);
+  }
 
   return NewSign == Signature;
 }
