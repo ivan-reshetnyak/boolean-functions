@@ -15,28 +15,8 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="binary.cpp">
+    <ClCompile Include="test-main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="boolean_function.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="boolean_function_normal_forms.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="boolean_function_properties.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="boolean_function_signature_conversions.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="binary.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="boolean_function.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
   </ItemGroup>
 </Project>
